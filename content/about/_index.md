@@ -3,7 +3,7 @@ title: "About"
 date: 2026-08-10
 ---
 
-I’m **Erik Xu**—a software enthusiast and writer building simple things for the web.
+I’m **Erik Xu**—a second-year Computer Science student at Cambridge. 
 
 This site serves as my digital notebook: a place to collect fleeting thoughts, document small projects, and log things I’m learning along the way.
 

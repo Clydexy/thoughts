@@ -1,6 +1,6 @@
 +++
 date = '2026-08-10T18:48:40+01:00'
-draft = true
+draft = false
 title = 'Arm'
 description = 'Reflection halfway through internship'
 +++
