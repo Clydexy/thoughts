@@ -1,0 +1,14 @@
+baseURL = 'https://www.erikxu.me/'
+locale = 'en-us'
+title = 'Notes & Thoughts'
+theme = 'risotto'
+
+[menu]
+  [[menu.main]]
+    name = 'Notes'
+    url = '/posts/'
+    weight = 1
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 2

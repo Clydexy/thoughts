@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Erik Xu on Notes &amp; Thoughts</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content in Erik Xu on Notes &amp; Thoughts</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 10 Aug 2026 18:48:40 +0100</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Arm</title>
+				<link>http://localhost:1313/posts/arm/</link>
+				<pubDate>Mon, 10 Aug 2026 18:48:40 +0100</pubDate>
+				<guid>http://localhost:1313/posts/arm/</guid>
+				<description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;When I started applying for internships half a year ago, Arm was probably one of the last companies I had in mind since I had only known it as a hardware company. Over the last couple of weeks I&amp;rsquo;ve come away with a new appreciation for the semiconductor industry, through my work on the Arm ML SDK for Vulkan.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;NOTE:&lt;/em&gt;&lt;/strong&gt;  Since the repo is open source, I&amp;rsquo;m free to share the commits that got merged.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>First Thought</title>
+				<link>http://localhost:1313/posts/first-thought/</link>
+				<pubDate>Mon, 10 Aug 2026 18:02:05 +0100</pubDate>
+				<guid>http://localhost:1313/posts/first-thought/</guid>
+				<description>&lt;p&gt;Every notebook needs a first entry, so: &lt;em&gt;Hello, world.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I set this one up during my internship at Arm. I want it to be a quiet place to document what I learn, what I build, and how my thinking changes as I find my way as a computer scientist.&lt;/p&gt;&#xA;&lt;p&gt;For now, this is simply a start.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

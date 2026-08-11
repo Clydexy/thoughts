@@ -1,0 +1,39 @@
+{{- partial "lang.html" . -}}
+<p class="copyright">{{ .Site.Copyright | markdownify }}</p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+
+<!-- Context-aware floating widget -->
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- if eq .Kind "404" }}
+<a class="glass-widget" href="{{ site.Home.RelPermalink }}" aria-label="Return home">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>← Return home</span>
+</a>
+{{- else if .IsHome }}
+  {{- range first 1 $posts.ByDate.Reverse }}
+<a class="glass-widget" href="{{ .RelPermalink }}" aria-label="Read the latest note: {{ .LinkTitle }}">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>Latest: {{ .LinkTitle }} →</span>
+</a>
+  {{- else }}
+<div class="glass-widget" aria-label="No notes published yet">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>No notes yet</span>
+</div>
+  {{- end }}
+{{- else if and .IsPage (eq .Section "posts") }}
+<div class="glass-widget" aria-label="{{ .ReadingTime }} minute read, published {{ .Date.Format "2 January 2006" }}">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>{{ .ReadingTime }} min read <span aria-hidden="true">·</span> {{ .Date.Format "2 Jan 2006" }}</span>
+</div>
+{{- else if and .IsSection (eq .Section "posts") }}
+<div class="glass-widget" aria-label="{{ len $posts }} {{ if eq (len $posts) 1 }}note{{ else }}notes{{ end }} published">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>{{ len $posts }} {{ if eq (len $posts) 1 }}note{{ else }}notes{{ end }} published</span>
+</div>
+{{- else }}
+<a class="glass-widget" href="{{ "posts/" | relURL }}" aria-label="Browse notes">
+  <span class="status-dot" aria-hidden="true"></span>
+  <span>Browse notes →</span>
+</a>
+{{- end }}

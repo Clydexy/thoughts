@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="not-found" aria-labelledby="not-found-title">
+  <p class="not-found__eyebrow">error: route not found</p>
+  <h1 id="not-found-title" class="not-found__title">404</h1>
+
+  <div class="not-found__terminal" aria-label="No matching note was found">
+    <span class="not-found__prompt" aria-hidden="true">$</span>
+    <span>find /notes -name "requested-page"</span>
+    <span class="not-found__output">find: no matching note</span>
+    <span class="not-found__prompt" aria-hidden="true">$</span>
+    <span class="not-found__cursor" aria-hidden="true"></span>
+  </div>
+
+  <p>This page may have moved, or perhaps it never existed.</p>
+
+  <nav class="not-found__links" aria-label="404 recovery links">
+    <a href="{{ site.Home.RelPermalink }}">← Return home</a>
+    <a href="{{ "posts/" | relURL }}">Browse notes</a>
+  </nav>
+</main>
+{{ end }}
+
+{{ define "aside" }}
+<p>Some paths lead nowhere. The useful ones lead back.</p>
+{{ end }}
