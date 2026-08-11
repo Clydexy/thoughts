@@ -7,8 +7,10 @@
     <span class="recent-notes__date">· <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></span>
     {{- with .Description }}
     <span class="recent-notes__summary">{{ . }}</span>
-    {{- else with .Summary }}
-    <span class="recent-notes__summary">{{ . | plainify | truncate 140 }}</span>
+    {{- else }}
+      {{- with .Summary }}
+      <span class="recent-notes__summary">{{ . | plainify | truncate 140 }}</span>
+      {{- end }}
     {{- end }}
   </li>
   {{- else }}
