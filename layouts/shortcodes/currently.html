@@ -1,0 +1,5 @@
+<ul>
+  {{- range site.Data.currently.items }}
+  <li><strong>{{ .label }}:</strong> {{ .text }}</li>
+  {{- end }}
+</ul>

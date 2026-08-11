@@ -11,9 +11,7 @@ This site serves as my digital notebook: a place to collect fleeting thoughts, d
 
 ### What I’m Doing Now
 
-* **Working:** Interning at Arm.
-* **Learning:** C++ and contributing to open-source projects.
-* **Reading:** AI research and following developments in the field.
+{{< currently >}}
 
 *(This section is inspired by Derek Sivers’ [/now page](https://nownownow.com/about) movement).*
 
