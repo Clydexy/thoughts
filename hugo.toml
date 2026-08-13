@@ -9,6 +9,6 @@ theme = 'risotto'
     url = '/posts/'
     weight = 1
   [[menu.main]]
-    name = 'About'
-    url = '/about/'
+    name = 'Reading'
+    url = '/reading/'
     weight = 2
