@@ -1,0 +1,23 @@
+{{ define "main" }}
+    {{ partial "breadcrumbs.html" . }}
+    <header class="content__header">
+        <h1>{{ .Title | markdownify }}</h1>
+        {{ .Content }}
+    </header>
+
+    <div class="post-list">
+    {{ range .Pages.ByDate.Reverse }}
+        <article class="post-list__item">
+            <header>
+                <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+            </header>
+            <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
+        </article>
+    {{ end }}
+    </div>
+{{ end }}
+
+{{ define "aside" }}
+    {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+{{ end }}

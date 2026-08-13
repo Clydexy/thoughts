@@ -157,3 +157,48 @@ a.glass-widget:focus-visible {
   display: block;
   color: var(--off-fg);
 }
+
+/* Breadcrumb navigation */
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  margin-left: 0.35rem;
+  content: "/";
+  color: var(--muted);
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--off-fg);
+}
+
+/* Descriptive notes index */
+.post-list__item {
+  margin-block: 2rem;
+}
+
+.post-list__item h2 {
+  margin-bottom: 0.25rem;
+}
+
+.post-list__item time {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-list__item p {
+  margin-top: 0.5rem;
+  color: var(--off-fg);
+}
