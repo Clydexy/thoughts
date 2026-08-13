@@ -3,6 +3,9 @@ locale = 'en-us'
 title = 'Notes & Thoughts'
 theme = 'risotto'
 
+[params.analytics]
+  cloudflareToken = 'bf47fd86a34e4334856687ecf78add45'
+
 [menu]
   [[menu.main]]
     name = 'Notes'

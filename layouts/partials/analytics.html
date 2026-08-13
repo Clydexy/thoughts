@@ -1,0 +1,5 @@
+{{- with site.Params.analytics.cloudflareToken }}
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{ dict "token" . | jsonify }}'></script>
+<!-- End Cloudflare Web Analytics -->
+{{- end }}
