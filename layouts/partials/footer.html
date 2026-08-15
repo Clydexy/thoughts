@@ -13,7 +13,7 @@
   {{- range first 1 $posts.ByDate.Reverse }}
 <a class="glass-widget" href="{{ .RelPermalink }}" aria-label="Read the latest note: {{ .LinkTitle }}">
   <span class="status-dot" aria-hidden="true"></span>
-  <span>Latest: {{ .LinkTitle }} →</span>
+  <span>Latest: <span{{ if .Params.italic_title }} class="title--italic"{{ end }}>{{ .LinkTitle }}</span> →</span>
 </a>
   {{- else }}
 <div class="glass-widget" aria-label="No notes published yet">

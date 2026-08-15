@@ -9,7 +9,7 @@
     {{ range .Pages.ByDate.Reverse }}
         <article class="post-list__item">
             <header>
-                <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+                <h2><a href="{{ .RelPermalink }}"{{ if .Params.italic_title }} class="title--italic"{{ end }}>{{ .Title | markdownify }}</a></h2>
                 <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
             </header>
             <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>

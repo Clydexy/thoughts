@@ -3,7 +3,7 @@
 <ul class="recent-notes">
   {{- range first $limit $posts.ByDate.Reverse }}
   <li>
-    <a href="{{ .RelPermalink }}"><strong>{{ .LinkTitle }}</strong></a>
+    <a href="{{ .RelPermalink }}"><strong{{ if .Params.italic_title }} class="title--italic"{{ end }}>{{ .LinkTitle }}</strong></a>
     <span class="recent-notes__date">· <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></span>
     {{- with .Description }}
     <span class="recent-notes__summary">{{ . }}</span>

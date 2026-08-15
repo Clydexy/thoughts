@@ -1,7 +1,7 @@
 {{ define "main" }}
     {{ partial "breadcrumbs.html" . }}
     <header class="content__header">
-        <h1>{{ .Title | markdownify }}</h1>
+        <h1{{ if .Params.italic_title }} class="title--italic"{{ end }}>{{ .Title | markdownify }}</h1>
     </header>
     <div class="content__body">
         {{ .Content }}
